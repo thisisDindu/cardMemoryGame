@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Three-Card Memory Game</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<h1>Card Memory Game</h1>
+<div class="difficulty">
+    <button id="easy" data-level="3">Easy</button>
+    <button id="medum" data-level="6">Medium</button>
+    <button id="hard" data-level="9">Hard</button>
+    <button id="extreme" data-level="9">Extreme</button>
+</div>
+<div class="scoreTracker">
+    <h2>score:<span id="score">0</span></h2>
+    <h2>Highscore:<span id="highScore">0</span></h2>
+</div>
+<button id="restart-btn">Restart Game</button>
+<h3>MOVES: <span id="moves">0</span></h3>
+<h3 id="timing">⏳<span id="timer">60</span></h3>
+<div class="game-board" id="game-board"></div>
+<h2 id="winStatus"></h2>
+<script src="game.js"></script>
+</body>
+</html>
